@@ -26,27 +26,21 @@
 <h2>The friends who share your hobby of ${hobby} are:</h2>
 <c:forEach var="names" items="${names}">
 <div class="container">
-    <%
-        List<String> names = (ArrayList<String>) request.getAttribute("names");
-    %>
+   
     <div class="row">
-        <%
-            for (String name : names) {
-        %>
+       
         <div class="col-sm-3">
             <div class="card">
-                <img src="asset/image/<%=name %>.jpg" class="card-img-top" alt="...">
+                <img src="asset/image/${names}.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
-                    <p class="card-text">Name: <%= name %>
+                    <p class="card-text">Name:${names}
                     </p>
                     <a href="sameHobby.html" class="btn btn-primary">Turn back</a>
                 </div>
             </div>
         </div>
 
-        <%
-            }
-        %>
+       
     </div>
 
 </div>
