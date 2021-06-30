@@ -1,0 +1,2 @@
+When open cookie, localhost can be entered.
+When close cookie, localhost can not be entered.

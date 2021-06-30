@@ -1,0 +1,2 @@
+When open cookie, qq email can be entered.
+When close cookie, qq email can not be entered.
